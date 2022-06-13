@@ -1,0 +1,20 @@
+﻿@model AspNetMvc.Models.ORM.Category
+
+    <form action ="/category/add" method="post">
+        <div>
+             @Html.LabelFor(x => x.Name)
+             @Html.TextBoxFor(x => x.Name)
+        </div>
+       <div>
+           @Html.LabelFor(x => x.Description)
+           @Html.TextBoxFor(x => x.Description)
+       </div>
+
+       <div>
+           <input type="submit" name="Add"/>
+
+       </div>
+
+
+
+    </form>

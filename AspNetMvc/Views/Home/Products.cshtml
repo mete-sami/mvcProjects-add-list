@@ -1,0 +1,28 @@
+﻿<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>UnitPrice</th>
+        <th>Category ID</th>
+        <th>Stock</th>
+        <th>Order</th>
+        <th>Discounted</th>
+        
+    </tr>
+
+
+@foreach (var item in @Model)
+{
+    <tr>
+        <td>@item.Id</td>
+          <td>@item.Name</td>
+            <td>@item.UnitPrice</td>
+              <td>@item.UnitInStock</td>
+                <td>@item.UnitOnOrder</td>
+                  <td>@item.CategoryId</td>
+                  <td>@item.Discounted</td>
+               
+    </tr>
+}
+
+</table>

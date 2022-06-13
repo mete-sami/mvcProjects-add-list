@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using AspNetMvc.Models.ORM
+@model List<Client>
+
+@if(@Model is null){
+    <p>Not found!</p>
+    return;
+    
+}
+<table action ="/client/list">
+    <tr>
+        <th>ID</th>
+        <th>UserName</th>
+        <th>City</th>
+        <th>Country</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+    <tr>
+        <td> @item.Id</td>
+        <td> @item.UserName</td>
+        <td> @item.City</td>
+        <td> @item.Country</td>
+    </tr>
+       }
+</table>
+
+
+
+
+

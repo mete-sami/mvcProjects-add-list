@@ -1,0 +1,28 @@
+﻿@model AspNetMvc.Models.ORM.Client
+
+    <form action ="/Client/Add" method="post">
+        <div>
+             @Html.LabelFor(x => x.UserName)
+             @Html.TextBoxFor(x => x.UserName)
+        </div>
+       <div>
+           @Html.LabelFor(x => x.City)
+           @Html.TextBoxFor(x => x.City)
+       </div>
+
+          <div>
+           @Html.LabelFor(x => x.Country)
+           @Html.TextBoxFor(x => x.Country)
+       </div>
+
+
+       
+       <div>
+           <input type="submit" name="Add"/>
+
+       </div>
+
+
+
+    </form>
+

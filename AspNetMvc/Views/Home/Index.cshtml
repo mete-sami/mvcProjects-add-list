@@ -1,0 +1,30 @@
+﻿@{
+   
+}
+@using AspNetMvc.Models.ORM;
+@model List<Suppliers>;
+  <table>
+      <tr>
+      <th>Id</th>
+      <th>CompanyName</th>
+      <th>ContactName</th>
+      <th>City</th>
+      <td>Country</td>
+      </tr>
+@foreach (var item in Model)
+{
+
+      <tr>
+          
+          <td> <a href = "/home/detail/@item.Id"> @item.Id</td>
+          <td> <a href = "/home/detail/@item.CompanyName"> @item.CompanyName</td>
+          <td> <a href = "/home/detail/@item.ContactName"> @item.ContactName</td>
+          <td> <a href = "/home/detail/@item.City"> @item.City</td>
+          <td> <a href = "/home/detail/@item.Country"> @item.Country</td>
+      </tr>
+
+    
+
+  
+}
+  </table>
